@@ -1,5 +1,7 @@
-import React from 'react'
+"use client"
+import {React, useState} from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag';
 
 const projectsData = [
     {
@@ -59,6 +61,16 @@ const projectsData = [
   ];
 
 function ProjectsSection() {
+  const [tag, setTag] = useState("All");
+
+  const handleTagchange = (newTag) => {
+    setTag(newTag);
+  };
+
+  const filteredProject = projectsData.filter((project) => 
+    project.tag.includes(tag)
+  );
+
   return (
     <>
         <h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
@@ -66,17 +78,19 @@ function ProjectsSection() {
         </h2>
 
         <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
-            <button className='rounded-full border-2 border-purple-500 px-6 py-3 text-xl cursor-pointer'>
-                All
-            </button>
+            <ProjectTag onClick={handleTagchange} name="All" isSelected={tag ==="All"} />
+        </div>
 
-            <button className='rounded-full border-2 border-slate-600 hover:border-white px-6 py-3 text-xl cursor-pointer'>
-                Web
-            </button>
+        <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+            <ProjectTag onClick={handleTagchange} name="Web" isSelected={tag ==="Web"} />
+        </div>
+
+        <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+            <ProjectTag onClick={handleTagchange} name="Mobile" isSelected={tag ==="Mobile"} />
         </div>
 
         <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-            {projectsData.map(project => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} gitUrl={project.gitUrl} previewUrl={project.previewUrl}/>)}
+            {filteredProject.map(project => <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} gitUrl={project.gitUrl} previewUrl={project.previewUrl}/>)}
         </div>
     </>
   )
