@@ -38,10 +38,9 @@ const HeroSection = () => {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.Quisam, volupatum.
                 </p>
                 <div>
-                  {/* <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white'>Hire Me</button> */}
-                  <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-neutral-900 via-neutral-600 to-slate-50 hover:bg-slate-200 text-white border border-white'>Hire Me</button>
+                  <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-900 via-blue-600 to-blue-50 hover:bg-slate-200 text-white border border-white'>Hire Me</button>
 
-                  <button className='px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500  via-purple-500 to-pink-500 hover:bg-slate-800 text-white border mt-3'>
+                  <button className='px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-900 via-blue-600 to-blue-50 hover:bg-slate-800 text-white border mt-3'>
                     <span className='block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2'>Download CV</span>
                   </button>
 

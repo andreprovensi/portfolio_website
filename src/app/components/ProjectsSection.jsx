@@ -79,13 +79,9 @@ function ProjectsSection() {
 
         <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
             <ProjectTag onClick={handleTagchange} name="All" isSelected={tag ==="All"} />
-        </div>
 
-        <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
             <ProjectTag onClick={handleTagchange} name="Web" isSelected={tag ==="Web"} />
-        </div>
-
-        <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
+                
             <ProjectTag onClick={handleTagchange} name="Mobile" isSelected={tag ==="Mobile"} />
         </div>
 
