@@ -25,9 +25,7 @@ const EmailSection = () => {
             },
             body:JSONdata
         }
-        
-        console.log(data)
-        console.log(JSONdata)
+
         const response = await fetch(endpoint, options);
         const resData = await response.json();
         setEmailSubmitted(true)
