@@ -7,12 +7,12 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
     {
       id: 1,
-      title: "React Portfolio Website",
-      description: "Project 1 description",
-      image: "/images/projects/1.png",
+      title: "Machine Learning Diabetes Prediction",
+      description: "Full stack web app to predict diabetes using machine learning",
+      image: "/images/projects/ml_diabetes_project.png",
       tag: ["All", "Web"],
-      gitUrl: "/",
-      previewUrl: "/",
+      gitUrl: "https://github.com/andreprovensi/diabetes_machine_learning_app",
+      previewUrl: "https://diabetes-prediction-mgje.onrender.com/",
     },
     {
       id: 2,

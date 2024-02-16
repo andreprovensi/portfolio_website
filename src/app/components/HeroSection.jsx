@@ -38,8 +38,21 @@ const HeroSection = () => {
                     repeat={Infinity}
                   />
                 </h1>
-                <p className='text-[#ADB7BE] text-base  sm:text-lg mb-6 lg:text-xl'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.Quisam, volupatum.
+                <p className='text-[#ADB7BE] text-base  sm:text-lg mb-6 lg:text-xl text-justify'>
+                Experienced data scientist with a proven track record of leveraging Python, PySpark,
+                Pandas, Numpy, Scikit-learn, SQL, AWS, and PowerBI to extract valuable insights and
+                drive data-driven decision-making. I have successfully applied data science, AI, and
+                machine learning to tackle business challenges such as fraud detection, customer
+                segmentation, and understanding customer behavior and product relationships.
+                </p>
+                <p className='text-[#ADB7BE] text-base  sm:text-lg mb-6 lg:text-xl text-justify'>
+                I have collaborated closely with cross-functional teams in fraud, marketing, and product,
+                developing my skills in ETL processes and data integration. My work involved wrangling
+                diverse datasets, ranging in size and complexity, to uncover actionable insights and
+                develop robust machine learning models.
+                I also have good interdisciplinary communication skills, demonstrated through my ability
+                to explain technical concepts and present insights to diverse audiences with varying
+                backgrounds.
                 </p>
                 <div>
                   <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-900 via-blue-600 to-blue-50 hover:bg-slate-200 text-white border border-white'>Hire Me</button>
@@ -57,7 +70,7 @@ const HeroSection = () => {
               transition={{ duration:0.5 }} 
               className='col-span-4 place-self-center mt-4 lg:mt-0'
               >
-              <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+              <div className="rounded-full bg-[#181818] w-[200px] h-[200px] lg:w-[200px] lg:h-[200px] relative sm:right-0 -right-12">
                 <Image
                   // src="/images/hero-image.png"
                   src="/images/andre_profile.png"
